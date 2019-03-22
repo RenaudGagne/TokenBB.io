@@ -1,11 +1,3 @@
-/*
-COLORS:
-
-Light blue: #A7B9CE;
-Medium blue: #2B3E50
-Dark Blue: #1F2D3B;
-
-*/
 *,
 *::after,
 *::before {
@@ -21,12 +13,13 @@ body {
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 1.7;
-  color: #666;
-  box-sizing: border-box; }
+  color: #777777;
+  box-sizing: border-box;
+  background-color: #f8f8f8; }
 
 .header {
   height: 95vh;
-  background-image: linear-gradient(to right, rgba(43, 62, 80, 0.85), rgba(167, 185, 206, 0.85)), url(../IMG/HERO2.JPG);
+  background-image: linear-gradient(to right, rgba(31, 45, 59, 0.85), rgba(167, 185, 206, 0.85)), url(../IMG/HERO2.JPG);
   background-size: cover;
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
@@ -53,7 +46,7 @@ body {
   text-align: center; }
 
 .heading-primary {
-  color: #fff;
+  color: #f8f8f8;
   text-transform: uppercase;
   backface-visibility: hidden; }
 
@@ -95,12 +88,12 @@ body {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
   transition: all .2s; }
 
-.btn--white {
-  background-color: rgba(255, 255, 255, 0.7);
-  color: #666;
+.btn--dark {
+  background-color: #1F2D3B;
+  color: #f8f8f8;
   font-weight: 700; }
 
-.btn--white::after {
+.btn--dark::after {
   background-color: #fff; }
 
 @keyframes moveInTop {
