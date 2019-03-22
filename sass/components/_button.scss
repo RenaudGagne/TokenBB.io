@@ -1,0 +1,29 @@
+.btn {
+    &:link,.btn:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 1.5rem 5rem;
+        display:inline-block;
+        border-radius: 9rem;
+        position: relative;
+        border: .1rem solid $mediumblue;
+        box-shadow: 0 0 1rem rgba($black,.4)
+    }
+    &:hover {
+        transform: translateY(-.2rem);
+        box-shadow: 0 1rem 2rem rgba($black,.2);    
+        transition: all .2s;
+        animation: pulse 2s infinite;
+    }
+    &:active {
+        transform:translateY(-1px);
+        box-shadow: 0 .5rem 1rem rgba($black,.2);  
+        transition: all .2s;
+    }
+    
+    &--dark {
+        background-color: $darkblue;
+        color: $white;
+        font-weight: 700;
+    }
+}
