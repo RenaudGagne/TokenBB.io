@@ -1,0 +1,25 @@
+{
+  "name": "tokenbb.io",
+  "version": "1.0.0",
+  "description": "Official TokenBB Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RenaudGagne/TokenBB.io.git"
+  },
+  "keywords": [
+    "tokenbb"
+  ],
+  "author": "BuildTeam",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RenaudGagne/TokenBB.io/issues"
+  },
+  "homepage": "https://github.com/RenaudGagne/TokenBB.io#readme",
+  "devDependencies": {
+    "node-sass": "^4.11.0"
+  }
+}
