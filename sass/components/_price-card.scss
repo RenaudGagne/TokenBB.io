@@ -1,0 +1,103 @@
+.card {
+
+    // Basic func
+    perspective: 110rem;
+    -moz-perspective: 110rem;
+    position: relative;
+    height: 52rem;
+
+    &__side {
+        height: 53rem;
+        transition: all .8s;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        backface-visibility: hidden;
+        border-radius: 3px;
+        box-shadow: 0 1.5rem 4rem rgba($black, 0.15);
+        overflow: hidden;
+
+        &--front {
+            background-color: white;
+            
+        }
+        &--back {
+            transform:rotateY(180deg);
+
+            &-1 {
+                background-image: linear-gradient(to right bottom, $pricing-one-light, $pricing-one-dark);
+            }
+            &-2 {
+                background-image: linear-gradient(to right bottom, $pricing-two-light, $pricing-two-dark);
+            }
+            &-3 {
+                background-image: linear-gradient(to right bottom, $pricing-three-light, $pricing-three-dark);
+            }
+        }
+    }
+    &:hover &__side--front {
+        transform: rotateY(-180deg);
+    }
+    &:hover .card__side--back {
+        transform: rotateY(0deg);
+    }
+    // Front Styling
+    &__picture {
+        background-size: cover;
+        height: 23rem;
+        background-blend-mode: screen;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+
+        &--1 {
+            background-image: linear-gradient(to right bottom, $pricing-one-light, $pricing-one-dark), url(../img/price-card-min.jpg);
+        }
+        &--2 {
+            background-image: url(../img/nat-5.jpg);
+        }
+        &--3 {
+            background-image: url(../img/nat-5.jpg);
+        }
+    }
+    &__heading {
+        font-size: 2.8rem;
+        text-transform: uppercase;
+        color: white;
+        position: absolute;
+        text-align: right;
+        top: 12rem;
+        right: 2rem;
+        width: 58%;
+        
+    }
+    &__heading-span {
+        padding: .5rem 0rem;
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
+        &--1 {
+            background-image: linear-gradient(
+                to right bottom, 
+                rgba($pricing-one-light, 0.85),
+                rgba($pricing-one-dark,0.85));
+        }
+    }
+    &__details {
+        padding: 3rem;
+        ul {
+           list-style: none;
+           width: 80%;
+           margin: 0 auto;
+            li {
+                text-align: center;
+                font-size: 1.5rem;
+                padding: 1rem;
+                
+                &:not(:last-child) {
+                    border-bottom: 1px solid #eee;
+                }
+
+            }
+        }
+    }
+}
