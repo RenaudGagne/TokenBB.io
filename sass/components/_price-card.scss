@@ -49,15 +49,17 @@
         background-blend-mode: screen;
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
         clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
 
         &--1 {
             background-image: linear-gradient(to right bottom, $pricing-one-light, $pricing-one-dark), url(../img/price-card-min.jpg);
         }
         &--2 {
-            background-image: url(../img/nat-5.jpg);
+            background-image: linear-gradient(to right bottom, $pricing-two-light, $pricing-two-dark), url(../img/price-card-min.jpg);
         }
         &--3 {
-            background-image: url(../img/nat-5.jpg);
+            background-image: linear-gradient(to right bottom, $pricing-three-light, $pricing-three-dark), url(../img/price-card-min.jpg);
         }
     }
     &__heading {
@@ -81,6 +83,18 @@
                 rgba($pricing-one-light, 0.85),
                 rgba($pricing-one-dark,0.85));
         }
+        &--2 {
+            background-image: linear-gradient(
+                to right bottom, 
+                rgba($pricing-two-light, 0.85),
+                rgba($pricing-two-dark,0.85));
+        }
+        &--3 {
+            background-image: linear-gradient(
+                to right bottom, 
+                rgba($pricing-three-light, 0.85),
+                rgba($pricing-three-dark,0.85));
+        }
     }
     &__details {
         padding: 3rem;
@@ -100,4 +114,31 @@
             }
         }
     }
+
+    // BACKSIDE Style
+    &__cta {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width:90%;
+        text-align: center;
+    }
+
+    &__price--box {
+        text-align: center;
+        margin-bottom: 8rem;
+        color: $white;
+    }
+
+    &__price--only {
+        font-size: 1.4rem;
+        text-transform: uppercase;
+    }
+
+    &__price--value {
+        font-size: 6rem;
+        font-weight: 200;
+    }
+
 }

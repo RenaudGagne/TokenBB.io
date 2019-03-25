@@ -22,8 +22,14 @@
     }
     
     &--dark {
-        background-color: $darkblue;
+        background-image: linear-gradient(to bottom, $mediumblue, $darkblue);
         color: $white;
+        font-weight: 700;
+    }
+    &--light {
+        background-image: linear-gradient(to bottom, $white, rgba($white, 0.9));
+        color: $darkblue;
+        border-color: $mediumblue;
         font-weight: 700;
     }
 }
