@@ -248,8 +248,12 @@ h4 {
 
 .section-pricing {
   background-color: #f7f7f7;
-  padding: 25rem 0 15rem 0;
+  padding: 25rem 0 0 0;
   margin-top: -10rem; }
+
+.section-testimonials {
+  padding: 10rem 0;
+  background-color: #f7f7f7; }
 
 .composition {
   position: relative; }
@@ -389,3 +393,19 @@ h4 {
   .card__price--value {
     font-size: 6rem;
     font-weight: 200; }
+
+.testimonials {
+  width: 75%;
+  margin: 0 auto;
+  box-shadow: 0 3rem 6rem rgba(34, 34, 34, 0.1);
+  background-color: #f7f7f7;
+  border-radius: 3px;
+  padding: 6rem;
+  font-size: 1.6rem; }
+  .testimonials__shape {
+    width: 15rem;
+    height: 15rem;
+    float: left;
+    background-color: orangered;
+    -webkit-shape-outside: circle(50% at 50% 50%);
+    shape-outside: circle(50% at 50% 50%); }
